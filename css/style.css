@@ -1,0 +1,1353 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*ОБЩИЕ*/
+
+*
+{
+ margin: 0px;
+ padding: 0px;
+ border: none;
+ outline: none;
+ text-indent: 0px;
+}
+
+div.clear
+{
+ width: 1px;
+ height: 1px;
+ clear: both;
+}
+
+.cursor
+{
+ cursor: pointer;
+}
+
+.mobile
+{
+ display: block;
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ margin: 8px 0px 0px 0px;
+ padding: 2px 3px;
+ border-radius: 3px;
+ border: 1px solid grey;
+ font-size: 12px;
+ line-height: 14px;
+}
+
+html, body
+{
+ height: 100%;
+}
+
+div.body
+{
+ position: relative;
+}
+
+div.blue
+{
+ position: absolute;
+ top: 120px;
+ left: 0px;
+ height: 323px;
+ width: 100%;
+ min-width: 850px;
+ background: url('../img/blue.jpg') repeat-x;
+}
+
+div.foot
+{
+ position: relative;
+ width: 100%;
+ min-width: 850px;
+ height: 200px;
+ background: url('../img/foot.jpg') repeat-x;
+}
+
+div.footer
+{
+ position: relative;
+ height: 200px;
+ width: 850px;
+ margin: 0px auto;
+}
+
+p.copyright
+{
+ position: absolute;
+ top: 30px;
+ left: 0px;
+ font: 14px 'Calibri';
+ color: #697e85;
+}
+
+p.produce
+{
+ position: absolute;
+ top: 55px;
+ left: 12px;
+ font: 14px 'Calibri';
+ color: #697e85;
+}
+
+p.produce a
+{
+ font: 14px 'Calibri';
+ color: #697e85;
+ text-decoration: underline;
+}
+
+div.faq
+{
+ position: absolute;
+ top: 22px;
+ right: 0px;
+ width: 205px;
+}
+
+div.faq p
+{
+ font: 24px 'Calibri';
+ color: #697e85;
+}
+
+div.faq a
+{
+ font: 14px 'Calibri';
+ color: #697e85;
+ text-decoration: underline;
+}
+
+div.header
+{
+ position: relative;
+ width: 850px;
+ height: 120px;
+ margin: 0px auto;
+}
+
+a.logo
+{
+ display: block;
+ position: absolute;
+ top: 23px;
+ left: 0px;
+}
+
+h1
+{
+ position: absolute;
+ top: 72px;
+ left: 0px;
+ font: 14px 'Calibri';
+ font-style: italic;
+ color: black;
+ line-height: 14px;
+}
+
+div.header p, div.header_autocatalog p
+{
+ position: absolute;
+ top: 68px;
+ right: 0px;
+ font: 18px 'Calibri';
+ font-style: italic;
+ color: black;
+ line-height: 18px;
+}
+
+div.header p span, div.header_autocatalog p span
+{
+ color: #ff5400;
+}
+
+div.menu
+{
+ position: relative;
+ width: 850px;
+ height: 44px;
+ margin: 0px auto;
+ background: url('../img/line.jpg') bottom left repeat-x;
+}
+
+div.hh
+{
+ float: left;
+ width: 1px;
+ height: 40px;
+ margin-top: 4px;
+ background-color: white;
+}
+
+a.main, a.about, a.contacts, a.buy
+{
+ display: block;
+ float: left;
+ margin-top: 4px;
+ height: 30px;
+ text-align: center;
+ font: 16px 'Calibri';
+ line-height: 16px;
+ padding-top: 10px;
+ color: white;
+ text-decoration: none;
+ text-shadow: #0f6393 1px 1px 0px;
+}
+
+div.menu a:hover, div.menu_autocatalog a:hover
+{
+ color: #006699;
+ background-color: white;
+ text-shadow: none;
+}
+
+a.main
+{
+ width: 102px;
+}
+
+a.about
+{
+ width: 130px;
+}
+
+a.contacts
+{
+ width: 147px;
+}
+
+a.buy
+{
+ width: 196px;
+}
+
+input.registration
+{
+ display: block;
+ float: right;
+ margin-top: 4px;
+ width: 206px;
+ height: 33px;
+ font: 20px/33px 'Calibri';
+ font-style: italic;
+ font-weight: bold;
+ color: #ffffff;
+ background-color: #ff5400;
+ text-shadow: #c94200 1px 1px 0px;
+}
+
+div.middle
+{
+ position: relative;
+ width: 850px;
+ margin: 0px auto;
+ min-height: 279px;
+ background-color: white;
+ padding-bottom: 90px;
+}
+
+/*INDEX*/
+
+div.index_middle_left
+{
+ float: left;
+ width: 645px;
+}
+
+div.slider
+{
+ position: relative;
+ margin: 12px 0px 0px 7px;
+ width: 630px;
+ height: 250px;
+}
+
+div.registration
+{
+ position: absolute;
+ bottom: 0px;
+ left: 0px;
+ width: 630px;
+ height: 50px;
+ background-color: black;
+ opacity: 0.46;
+ filter: alpha(opacity=46);
+ z-index: 10;
+} 
+
+p.registration
+{
+ position: absolute;
+ bottom: 0px;
+ left: 0px;
+ height: 50px;
+ width: 100%;
+ text-indent:15px;
+ font: 20px 'Calibri';
+ font-weight: bold;
+ color: white;
+ line-height: 50px;
+ z-index: 11;
+}
+
+p.registration a
+{
+ color: white;
+ text-decoration: underline;
+}
+
+ul.slide_number
+{
+ position: absolute;
+ top: 15px;
+ right: 10px;
+ list-style: none;
+ z-index: 10;
+}
+
+ul.slide_number li
+{
+ float: left;
+ width: 10px;
+ height: 10px;
+ margin-right: 5px;
+ background: url('../img/slide.jpg') no-repeat;
+}
+
+ul.slide_number li a {
+    font-size: 1px;
+    opacity: 0;
+}
+
+ul.slide_number li.selected
+{
+ float: left;
+ width: 10px;
+ height: 10px;
+ margin-right: 5px;
+ background: url('../img/slide.jpg') no-repeat;
+ background-position: 0px -10px;
+}
+
+div.right
+{
+ width: 205px;
+ float: left;
+}
+ 
+form.authorization
+{
+ width: 195px;
+ height: 250px;
+ margin: 12px 0px 10px 0px;
+ background-color: #e5e7e8;
+}
+
+p.authorization
+{
+ width: 195px;
+ font: 20px 'Calibri';
+ font-weight: bold;
+ font-style: italic;
+ color: white;
+ text-shadow: #83a40f 1px 1px 0px;
+ background-color: #a6d013;
+ line-height: 20px;
+ height: 28px;
+ padding: 8px 0px 0px 0px;
+ text-align: center;
+}
+
+p.login
+{
+ font: 11px 'Calibri';
+ line-height: 11px;
+ color: black;
+ margin: 15px 0px 3px 15px;
+}
+
+input.authorization
+{
+ display: block;
+ width: 158px;
+ height: 23px;
+ background-color: white;
+ border: 1px solid #a8acad;
+ color: black;
+ line-height: 23px;
+ font: 11px 'Calibri';
+ margin: 0px 0px 0px 15px;
+ padding: 0px 6px;
+}
+
+p.password
+{
+ font: 11px 'Calibri';
+ line-height: 11px;
+ color: black;
+ margin: 10px 0px 3px 15px;
+}
+
+input.enter
+{
+ display: block;
+ width: 60px;
+ height: 30px;
+ font: 14px 'Calibri';
+ font-weight: bold;
+ color: white;
+ text-shadow: #5079a1 1px 1px 0px;
+ margin: 11px 0px 10px 15px;
+ background-color: #6699cc;
+}
+
+input.remember
+{
+ display: block;
+ height: 15px;
+ line-height: 11px;
+ margin: 0px 0px 5px 15px;
+ font: 11px 'Calibri';
+ color: #0099cc;
+ text-decoration: underline;
+ background-color: #e5e7e8;
+}
+
+input.reg
+{
+ display: block;
+ height: 15px;
+ line-height: 11px;
+ margin: 5px 0px 0px 15px;
+ font: 11px 'Calibri';
+ color: #ff6600;
+ text-decoration: underline;
+ background-color: #e5e7e8;
+}
+
+a.supplies
+{
+ display: block;
+}
+
+h2.car_marks
+{
+ margin: 25px 0px 15px 15px;
+ font: 16px 'Calibri';
+ font-weight: normal;
+ color: #006699;
+}
+
+div.column
+{
+ width: 195px;
+ float: left;
+ padding: 0px 0px 0px 15px;
+}
+
+a.car_marks
+{
+ font: 16px/24px 'Calibri';
+ color: #333333;
+ text-decoration: underline;
+}
+
+span.car_marks_number
+{
+ font: 16px/24px 'Calibri';
+ color: #ff5400;
+ text-decoration: none;
+}
+
+span.auction_number
+{
+ display: block;
+ float: left;
+ font: 16px/19px 'Calibri';
+ color: #ff5400;
+ text-decoration: none;
+}
+
+a.car_marks span
+{
+ font: 16px/24px 'Calibri';
+ color: #ff5400;
+ text-decoration: underline;
+}
+
+div.fix
+{
+ position: relative;
+ width: 130px;
+ margin: 5px 0px 0px -15px;
+ padding-left: 15px;
+ height: 19px;
+ background-color: #d4f1fa;
+}
+
+a.fix
+{
+ display: block;
+ float: left;
+ margin: 0px 5px 0px 0px;
+ height: 19px;
+ font: 16px/19px 'Calibri';
+ color: #333333;
+ text-decoration: underline;
+}
+
+img.fix
+{
+ float: right;
+}
+
+
+/*Форма регистрация*/
+
+div.bg
+{
+ display: none; 
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ opacity: 0.54;
+ filter: alpha(opacity=54);
+ z-index: 20;
+}
+
+div.registration_form
+{
+ display: none; 
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 30;
+}
+
+div.registr_bg
+{
+ display: table;
+ width: 100%;
+ height: 100%;
+}
+
+div.parent
+{
+ display: table-row;
+}
+
+div.child
+{
+ display: table-cell;
+ height: 100%;
+ width: 100%;
+ text-align: center;
+ vertical-align: middle;
+}
+
+form.registr
+{
+ display: block;
+ width: 350px;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: #000000 0px 0px 10px;
+ margin: 0px auto;
+ padding: 20px 0px;
+}
+
+p.h_registr
+{
+ margin: 0px 0px 30px 0px;
+ text-align: center;
+ font: 18px 'Tahoma';
+ color: black;
+}
+
+p.registr
+{
+ font: 12px 'Tahoma';
+ color: black;
+ margin: 0px 0px 5px 0px;
+}
+
+input.registr
+{
+ display: block;
+ width: 163px;
+ height: 20px;
+ border: 1px solid #a8acad;
+ margin: 0px auto 7px auto;
+ padding: 0px 6px;
+ font: 12px 'Tahoma';
+ color: black;
+ line-height: 20px;
+}
+
+input.reg_submit
+{
+ display: block;
+ width: 140px;
+ height: 40px;
+ margin: 25px auto 0px auto;
+ background-color: #ff5400;
+ font: 20px 'Calibri';
+ font-style: italic;
+ color: white;
+ text-shadow: #401500 1px 1px 1px;
+}
+
+/*Конец формы регистрация*/
+
+/*Каталог*/
+
+div.blue_autocatalog
+{
+ position: absolute;
+ top: 120px;
+ left: 0px;
+ height: 323px;
+ width: 100%;
+ min-width: 1080px;
+ background: url('../img/blue.jpg') repeat-x;
+}
+
+div.foot_autocatalog
+{
+ position: relative;
+ width: 100%;
+ min-width: 1080px;
+ height: 200px;
+ background: url('../img/foot.jpg') repeat-x;
+}
+
+div.footer_autocatalog
+{
+ position: relative;
+ height: 200px;
+ width: 1080px;
+ margin: 0px auto;
+}
+
+div.header_autocatalog
+{
+ position: relative;
+ width: 1080px;
+ height: 120px;
+ margin: 0px auto;
+}
+
+div.menu_autocatalog
+{
+ position: relative;
+ width: 1080px;
+ height: 44px;
+ margin: 0px auto;
+ background: url('../img/line.jpg') bottom left repeat-x;
+}
+
+div.middle_autocatalog
+{
+ position: relative;
+ width: 1080px;
+ margin: 0px auto;
+ min-height: 279px;
+ background-color: white;
+ padding-bottom: 90px;
+}
+
+div.left
+{
+ float: left;
+ width: 215px;
+}
+
+h2.car_marks2
+{
+ margin: 10px 0px 10px 15px;
+ font: 16px 'Calibri';
+ font-weight: normal;
+ color: #006699;
+}
+
+h2.car_marks3
+{
+ margin: 20px 0px 10px 15px;
+ font: 16px 'Calibri';
+ font-weight: normal;
+ color: #006699;
+}
+
+a.car_marks2
+{
+ display: block;
+ width: 172px;
+ margin: 0px 0px 5px 15px;
+ padding: 0px 0px 0px 8px;
+ height: 19px;
+ text-decoration: none;
+ /*font: 16px 'Calibri';
+ color: #333333;
+ text-decoration: underline;
+ line-height: 19px;*/
+}
+
+a.car_marks2:hover
+{
+ background-color: #ebebeb;
+}
+
+span.car_marks2 
+{
+ display: block;
+ float: left;
+ height: 19px;
+ font: 16px/19px 'Calibri';
+ color: black;/*#ff5400;*/
+ text-decoration: underline;
+ margin: 0px 5px 0px 0px;
+}
+
+span.car_marks_number2
+{
+ display: block;
+ float: left;
+ height: 19px;
+ font: 16px/19px 'Calibri';
+ color: #ff5400;
+ text-decoration: none;
+}
+ 
+
+div.fix2
+{
+ width: 180px;
+ margin: 0px 0px 5px 15px;
+ height: 19px;
+ background-color: #d4f1fa;
+}
+
+a.fix2
+{
+ display: block;
+ width: 172px;
+ height: 19px;
+ margin-left: 8px;
+ font: 16px 'Calibri';
+ color: #333333;
+ text-decoration: underline;
+ line-height: 19px;
+ background: url('../img/fix.jpg') top right no-repeat;
+}
+
+a.fix2 span
+{
+ font: 16px 'Calibri';
+ color: #ff5400;
+ text-decoration: none;
+ line-height: 19px;
+}
+
+div.center
+{
+ float: left;
+ width: 648px;
+ margin-right: 11px;
+}
+
+h2.catalog
+{
+ font: 16px 'Calibri';
+ font-weight: normal;
+ color: black;
+ margin: 10px 0px 15px 0px;
+}
+
+div.car
+{
+ padding: 10px 0px;
+ border-top: 1px solid #e3e3e3;
+ border-left: 1px solid #e3e3e3;
+ border-right: 1px solid #e3e3e3;
+}
+
+div.image
+{
+ float: left;
+ width: 144px;
+ text-align: center;
+ margin: 0px 9px 0px 0px;
+}
+
+img.catalog_car
+{
+ display: block;
+ margin: 0px auto;
+ width: 120px;
+ height: 90px;
+}
+
+a.image
+{
+ display: block;
+ background-color: #6699cc;
+ width: 72px;
+ height: 19px;
+ font: 10px 'Tahoma';
+ color: white;
+ line-height: 19px;
+ text-decoration: none;
+ margin: 12px auto;
+}
+
+p.catalog_car
+{
+ font: 12px 'Tahoma';
+ color: black;
+ line-height: 15px;
+ margin-right: 143px;
+}
+
+form.stavka, form.stavka2, form.stavka3
+{
+ float: right;
+ width: 136px;
+ text-align: center;
+}
+
+input.stavka
+{
+ display: block;
+ width: 108px;
+ height: 23px;
+ border: 1px solid #a8acad;
+ margin: 0px auto 8px auto;
+ color: black;
+ line-height: 23px;
+ font: 10px 'Tahoma';
+ padding: 0px 6px;
+}
+
+input.betting
+{
+ display: block;
+ width: 107px;
+ height: 19px;
+ margin: 0px auto;
+ font: 10px 'Tahoma';
+ color: white;
+ background-color: #ff5400;
+ line-height: 19px;
+}
+
+input.stavka2
+{
+ display: block;
+ margin: 0px auto;
+ width: 121px;
+ height: 44px;
+ font: 10px 'Tahoma';
+ color: white;
+ text-align: center;
+ line-height: 12px;
+ background: url('../img/stavka2.jpg');
+}
+
+div.stavka3
+{
+ width: 107px;
+ height: 25px;
+ margin: 0px auto;
+}
+
+input.stavka3
+{
+ display: block;
+ height: 23px;
+ width: 68px;
+ border: 1px solid #a8acad;
+ color: black;
+ line-height: 23px;
+ font: 10px 'Tahoma';
+ padding: 0px 6px;
+ text-align: center;
+ float: left;
+}
+ 
+form.stavka3 p
+{
+ font: 14px 'Tahoma';
+ color: black;
+ line-height: 25px;
+ display: inline-block;
+ width: 25px;
+ float: left;
+}
+
+input.betting3
+{
+ display: block;
+ width: 107px;
+ height: 19px;
+ margin: 8px auto 8px auto;
+ color: white;
+ line-height: 19px;
+ font: 10px 'Tahoma';
+ padding: 0px 6px;
+ background-color: #ff5400;
+}
+
+form.authorization2
+{
+ width: 195px;
+ height: 250px;
+ margin: 12px 0px 10px 0px;
+ background: url('../img/autorization_background.jpg') no-repeat;
+}
+
+form.find
+{
+ display: block;
+ width: 195px;
+ background-color: #ecedee;
+ padding: 0px 0px 30px 0px;
+ margin: 10px 0px 10px 0px;
+}
+
+p.find
+{
+ width: 195px;
+ height: 33px;
+ font: 20px 'Calibri';
+ font-weight: bold;
+ font-style: italic;
+ color: white;
+ text-align: center;
+ line-height: 33px;
+ background-color: #137dbb;
+ text-shadow: #0f6496 1px 1px 0px;
+}
+
+p.find_p
+{
+ font: 12px 'Tahoma';
+ color: #787878;
+ line-height: 15px;
+ margin: 5px 0px 5px 15px;
+}
+
+select.marka
+{
+ display: block;
+ width: 159px;
+ height: 19px;
+ margin: 0px 0px 0px 15px;
+ padding: 0px 0px 0px 3px;
+ border: 1px solid #c7d8e3;
+ border-radius: 2px 0px 0px 2px;
+ font: 12px 'Tahoma';
+ line-height: 19px;
+ color: #787878;
+}
+
+div.year
+{
+ margin: 0px 0px 0px 15px;
+ height: 21px;
+}
+
+select.year1
+{
+ display: block;
+ float: left;
+ height: 19px;
+ width: 58px;
+ margin: 0px 5px 0px 0px;
+ padding: 0px 0px 0px 3px;
+ border: 1px solid #c7d8e3;
+ border-radius: 2px 0px 0px 2px;
+ font: 12px 'Tahoma';
+ line-height: 19px;
+ color: #787878;
+}
+
+div.year p
+{
+ font: 12px 'Tahoma';
+ line-height: 21px;
+ color: #787878;
+ margin: 0px 5px 0px 0px;
+ float: left;
+} 
+
+select.year2
+{
+ display: block;
+ float: left;
+ height: 19px;
+ width: 58px;
+ padding: 0px 0px 0px 3px;
+ border: 1px solid #c7d8e3;
+ border-radius: 2px 0px 0px 2px;
+ font: 12px 'Tahoma';
+ line-height: 19px;
+ color: #787878;
+}
+
+option
+{
+ font: 12px 'Tahoma';
+ line-height: 19px;
+ color: #787878;
+ padding: 0px 0px 0px 6px;
+}
+
+select.km
+{
+ display: block;
+ height: 19px;
+ width: 75px;
+ margin: 0px 0px 0px 15px;
+ padding: 0px 0px 0px 3px;
+ border: 1px solid #c7d8e3;
+ border-radius: 2px 0px 0px 2px;
+ font: 12px 'Tahoma';
+ line-height: 19px;
+ color: #787878;
+}
+
+select.fuel
+{
+ display: block;
+ height: 19px;
+ width: 110px;
+ margin: 0px 0px 0px 15px;
+ padding: 0px 0px 0px 3px;
+ border: 1px solid #c7d8e3;
+ border-radius: 2px 0px 0px 2px;
+ font: 12px 'Tahoma';
+ line-height: 19px;
+ color: #787878;
+}
+
+input.find
+{
+ display: block;
+ width: 60px;
+ height: 30px;
+ font: 14px 'Calibri';
+ color: white;
+ font-weight: bold;
+ line-height: 30px;
+ background-color: #137dbb;
+ margin: 16px 0px 0px 18px;
+ text-shadow: #0f6496 1px 1px 0px;
+}
+
+div.page_number
+{
+ margin: 30px 0px 0px 0px;
+ text-align: center;
+}
+
+div.page_number 
+{
+ width: 198px;
+ height: 22px;
+ margin: 30px auto 0px auto;
+}
+
+div.page_number a
+{
+ display: block;
+ float: left;
+ width: 22px;
+ height: 22px;
+ display: inline;
+ font: 18px 'Calibri';
+ color: black;
+ line-height: 22px;
+ text-align: center;
+ text-decoration: none;
+}
+
+div.page_number a.active
+{
+ background-color: #137dbb;
+ color: white;
+}
+
+
+/*autocatalog-auto*/
+
+
+p.your_profile
+{
+ float: right;
+ margin-top: 4px;
+ width: 206px;
+ height: 33px;
+ font: 20px 'Calibri';
+ line-height: 33px;
+ text-align: center;
+ color: white;
+ font-style: italic;
+ font-weight: bold;
+ background-color: #a6d013;
+ text-shadow: #83a40f 1px 1px 0px;
+} 
+ 
+
+div.autocatalog_auto
+{
+ padding: 12px;
+ border: 1px solid #e3e3e3;
+}
+
+img.autocatalog_auto
+{
+ float: left;
+ margin: 0px 12px 5px 0px;
+}
+
+form.autocatalog_auto
+{
+ margin: 0px 0px 25px 0px;
+}
+
+form.autocatalog_auto_bottom
+{
+ margin: 30px 0px 25px 0px;
+}
+
+input.autocatalog_auto_stavka
+{
+ display: block;
+ width: 108px;
+ height: 23px;
+ border: 1px solid #a8acad;
+ line-height: 23px;
+ font: 10px 'Tahoma';
+ color: black;
+ padding: 0px 6px;
+ margin: 0px 0px 8px 0px;
+}
+
+input.autocatalog_auto_submit
+{
+ display: block;
+ width: 107px;
+ height: 19px;
+ line-height: 19px;
+ font: 10px 'Tahoma';
+ color: white;
+ background-color: #ff5400;
+}
+
+p.autocatalog_auto
+{
+ font: 12px 'Tahoma';
+ color: black;
+}
+
+p.autocatalog_auto_describe
+{
+ font: 12px 'Tahoma';
+ color: black;
+ clear: both;
+ margin: 5px 0px 0px 0px;
+ text-align: justify;
+}
+ 
+img.other_photo
+{
+ display: block;
+ width: 120px;
+ height: 90px;
+ float: left;
+ margin: 0px 4px 4px 0px;
+}
+
+a.auto_catalog_back
+{
+ display: block;
+ width: 60px;
+ height: 19px; 
+ font: 10px 'Tahoma';
+ color: white;
+ background-color: #6699cc;
+ text-decoration: none;
+ text-align: center;
+ line-height: 19px;
+}
+
+form.profile
+{
+ display: block;
+ margin: 10px 0px 10px 0px;
+ padding: 15px 0px 20px 0px;
+ width: 195px;
+ background-color: #e5e7e8;
+}
+
+p.profile
+{
+ font: 14px 'Calibri';
+ color: #000000;
+ margin: 0px 0px 10px 15px;
+}
+
+a.my_page
+{
+ display: block;
+ line-height: 14px;
+ font: 11px 'Calibri';
+ text-decoration: underline;
+ color: #0099cc;
+ margin: 0px 0px 4px 15px;
+}
+
+a.my_page:hover, a.format:hover
+{
+ color: #ff5400;
+}
+
+a.format
+{
+ display: block;
+ line-height: 14px;
+ font: 11px 'Calibri';
+ text-decoration: underline;
+ color: #0099cc;
+ margin: 0px 0px 10px 15px;
+}
+
+input.exit
+{
+ display: block;
+ width: 60px;
+ height: 30px;
+ margin: 0px 0px 0px 15px;
+ font: 14px 'Calibri';
+ font-weight: bold;
+ color: #ffffff;
+ line-height: 30px;
+ text-shadow: #5079a1 1px 1px 0px;
+ background-color: #6699cc;
+}
+
+a.all_marks
+{
+ display: block;
+ height: 19px;
+ width: 110px;
+ background-color: #6699cc;
+ font: 10px/19px 'Tahoma';
+ color: #ffffff;
+ text-decoration: none;
+ text-align: center;
+ margin: 10px 0px 0px 25px;
+}
+
+
+/*Profile*/
+
+
+p.fio
+{
+ font: 14px/14px 'Tahoma';
+ color: #000000;
+}
+
+p.format_profile
+{
+ font: 12px/12px 'Tahoma';
+ color: #000000;
+ margin: 20px 0px 15px 0px;
+}
+
+input.format_profile
+{
+ display: block;
+ height: 20px;
+ width: 293px;
+ background-color: #ffffff;
+ font: 12px/20px 'Tahoma';
+ color: #cccccc;
+ padding: 0px 6px;
+ border: 1px solid #a8acad;
+}
+
+div.format_profile input
+{
+ display: block;
+ height: 20px;
+ width: 293px;
+ float: left;
+ background-color: #ffffff;
+ font: 12px/20px 'Tahoma';
+ color: #cccccc;
+ padding: 0px 6px;
+ border: 1px solid #a8acad;
+ margin: 0px 15px 0px 0px;
+}
+
+div.format_profile p
+{
+ font: 12px/22px 'Tahoma';
+ color: #a6d013;
+}
+
+input.change_profile
+{
+ display: block;
+ width: 85px;
+ height: 30px;
+ margin: 20px 0px 15px 0px;
+ font: 14px/30px 'Calibri';
+ font-weight: bold;
+ color: #ffffff;
+ background-color: #ff5400;
+ text-shadow: #c94200 1px 1px 0px;
+}
+
+a.my_bet
+{
+ display: block;
+ margin: 0px 0px 5px 25px;
+ font: 14px/16px 'Calibri';
+ color: #000000;
+ text-decoration: underline;
+}
+ 
+a.my_bet:hover
+{
+ color: #ff5400;
+ text-decoration: none;
+}
+
+a.documents
+{
+ display: block;
+ margin: 0px 0px 5px 25px;
+ font: 14px/16px 'Calibri';
+ color: #000000;
+ text-decoration: underline;
+}
+ 
+a.documents:hover
+{
+ color: #137dbb;
+ text-decoration: none;
+}
+
+ 

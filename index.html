@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<link href="css/style.css" title="style" media="screen" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!--script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script-->
+<script type="text/javascript" src="js/slides.js"></script>
+        
+<script type="text/javascript">
+$(function() {
+    $('ul.slide_number li').click(function() {
+        slider.slides("slide", $(this).find('a').text());
+        return false;
+    });
+    var slider = $('#slides').slides({
+        height: 250,
+        width: 630,
+        playInterval: 8000,
+        pauseInterval: 8000,
+        navigation: false,
+        pagination: false,
+        effects: {
+            navigation: "slide",
+            pagination: "slide"
+        },
+        navigateEnd: function(current) {
+            $('ul.slide_number li').removeClass('selected');
+            $('ul.slide_number li:contains('+current+')').addClass('selected');
+            
+        }
+    });
+    setTimeout(function() { slider.slides('play'); }, 8000);
+    
+    $('input.registration').click(function() {
+        $('.bg').show();
+        $('.registration_form').show();
+    })
+	
+	$('.child').click(function(e) {
+        var t = $(e.target);
+        if ((t.parents('form.registr').length == 0) && (!t.hasClass('registr'))) {
+            $('.bg').hide();
+     $('.registration_form').hide();
+        }
+    });
+})    
+</script>
+
+<title>Freebec.eu</title>
+
+</head>
+
+<body>
+
+<div class="body">
+
+<div class="blue"></div>
+
+<div class="header">
+  <a class="logo" href="#"><img class="logo" alt="freebec.eu" src="img/logo.jpg"></a>
+  <h1>Бесплатная покупка подержанных лизинговых авто</h1>
+  <input class="mobile cursor" name="mobile" type="button" value="Мобильная версия">
+  <p>Сейчас на сайте&nbsp;<span>1056</span>&nbsp;автомобилей</p>
+</div>
+
+<div class="menu">
+<a class="main" href="#">ГЛАВНАЯ</a><div class="hh"></div>
+<a class="about" href="#">О ПРОЕКТЕ</a><div class="hh"></div>
+<a class="contacts" href="#">КОНТАКТЫ</a><div class="hh"></div>
+<a class="buy" href="#">УСЛОВИЯ ПОКУПКИ</a><div class="hh"></div>
+<input type="button" class="registration cursor" value="Регистрация &rarr;">
+</div>
+
+<div class="middle">
+
+  <div class="index_middle_left">
+    <div class="slider">
+        <div id="slides">
+            <img class="car" alt="car" src="img/car1.jpg">
+            <img class="car" alt="car" src="img/car2.jpg">
+            <img class="car" alt="car" src="img/car3.jpg">
+            <img class="car" alt="car" src="img/car4.jpg">
+        </div>
+      <div class="registration"></div>
+      <p class="registration">Покупать и выбирать теперь просто!&nbsp;<a href="#">Зарегестрируйся!</a></p>
+      <ul class="slide_number">
+        <li class="selected"><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+      </ul>
+    </div>
+    <div class="car_marks">
+      <h2 class="car_marks">МАРКИ АВТОМОБИЛЕЙ:</h2>
+      <div class="column">
+        <a class="car_marks" href="#">Alfa Romeo</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Audi</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">BMW</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Mercedes</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Citroen</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Fiat</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Ford</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Chevrolet</a>&nbsp;<span class="car_marks_number">(17)</span>
+      </div>
+      <div class="column">
+        <a class="car_marks" href="#">Jeep</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Mitsubishi</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Renault</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Mini</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Jaguar</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Opel</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Land Rover</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Lexus</a>&nbsp;<span class="car_marks_number">(17)</span>
+      </div>
+      <div class="column">
+        <a class="car_marks" href="#">Lancia</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Aston Martin</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Ford</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Buick</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Peogeot</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Nissan</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Honda</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Toyota</a>&nbsp;<span class="car_marks_number">(17)</span>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <div class="car_marks">
+    <h2 class="car_marks">АУКЦИОНЫ:</h2>
+    <div class="column">
+        <div class="fix"><a class="fix" href="#">ALD</a>&nbsp;<span class="auction_number">(17)</span><img class="fix" alt="fix" src="img/fix.jpg"></div>
+        <div class="fix"><a class="fix" href="#">ARVAL</a>&nbsp;<span class="auction_number">(17)</span><img class="fix" alt="fix" src="img/fix.jpg"></div>
+        <div class="fix"><a class="fix" href="#">Car Next</a>&nbsp;<span class="auction_number">(17)</span><img class="fix" alt="fix" src="img/fix.jpg"></div>
+    </div>
+    <div class="column">
+        <a class="car_marks" href="#">ALD</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">ARVAL</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Car Next</a>&nbsp;<span class="car_marks_number">(17)</span>
+    </div>
+    <div class="column">
+        <a class="car_marks" href="#">ALD</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">ARVAL</a>&nbsp;<span class="car_marks_number">(17)</span><br>
+        <a class="car_marks" href="#">Car Next</a>&nbsp;<span class="car_marks_number">(17)</span>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+<div class="right">
+  <form class="authorization" method="get">
+    <p class="authorization">Авторизация:</p>
+    <p class="login">ЛОГИН (E-MAIL):</p>
+    <input class="authorization" type="text">
+    <p class="password">ПАРОЛЬ:</p>
+    <input class="authorization" type="password">
+    <input class="enter cursor" type="submit" value="ВОЙТИ">
+    <input type="button" class="remember cursor" value="Напомнить пароль">
+    <input type="button" class="reg cursor" value="Регистрация">
+  </form>
+  
+  <a class="supplies" href="#"><img class="supplies" alt="supplies" src="img/supplies.jpg"></a>
+  
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="foot">
+   <div class="footer">
+           <p class="copyright">&copy; Фрибек, все права сохранены 2012</p>
+           <p class="produce">Разработка сайта:&nbsp;<a href="#">Partgraphic</a></p>
+           <div class="faq">
+            <p>Частые вопросы:</p>
+             <a href="#">Как купить автомобиль на сайте?</a><br>
+             <a href="#">Как оплатить покупку?</a><br>
+             <a href="#">Варианты доставки?</a><br>
+             <a href="#">Стоимость ваших услуг?</a>
+           </div>
+   </div>
+</div>
+
+</div>
+
+
+<!--Форма регистрация-->
+
+<div class="bg"></div> <!--Здесь надо поставить стиль display: none-->
+<div class="registration_form"> <!--Здесь надо поставить стиль display: none-->
+<div class="registr_bg">
+  <div class="parent">
+    <div class="child">
+      <form method="get" class="registr">
+        <p class="h_registr">Регистрация на Freebec.eu</p>
+        <p class="registr">Email (будет также Вашим логином для входа)</p>
+        <input class="registr" type="text">
+        <p class="registr">Выберите пароль</p>
+        <input class="registr" type="text">
+        <p class="registr">Страна проживания</p>
+        <input class="registr" type="text">
+        <p class="registr">Номер телефона в международном формате</p>
+        <input class="registr" type="text">
+        <p class="registr">Скайп (Skype)</p>
+        <input class="registr" type="text">
+        <p class="registr">Скайп (Skype)</p>
+        <input class="registr" type="text">
+        <input type="submit" class="reg_submit cursor" value="Регистрация">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Конец формы регистрация-->
+
+
+</body>
+</html>

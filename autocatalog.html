@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<link href="css/style.css" title="style" media="screen" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!--script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script-->
+<script type="text/javascript" src="js/slides.js"></script>
+        
+<script type="text/javascript">
+$(function() {
+    $('ul.slide_number li').click(function() {
+        slider.slides("slide", $(this).find('a').text());
+        return false;
+    });
+    var slider = $('#slides').slides({
+        height: 250,
+        width: 630,
+        playInterval: 8000,
+        pauseInterval: 8000,
+        navigation: false,
+        pagination: false,
+        effects: {
+            navigation: "slide",
+            pagination: "slide"
+        },
+        navigateEnd: function(current) {
+            $('ul.slide_number li').removeClass('selected');
+            $('ul.slide_number li:contains('+current+')').addClass('selected');
+            
+        }
+    });
+    setTimeout(function() { slider.slides('play'); }, 8000);
+    
+    $('input.registration').click(function() {
+        $('.bg').show();
+        $('.registration_form').show();
+    })
+	
+	$('.child').click(function(e) {
+        var t = $(e.target);
+        if ((t.parents('form.registr').length == 0) && (!t.hasClass('registr'))) {
+            $('.bg').hide();
+     $('.registration_form').hide();
+        }
+    });
+})    
+</script>
+
+<title>Freebec.eu - autocatalog</title>
+
+</head>
+
+<body>
+
+<div class="body">
+
+<div class="blue_autocatalog"></div>
+
+<div class="header_autocatalog">
+  <a class="logo" href="#"><img class="logo" alt="freebec.eu" src="img/logo.jpg"></a>
+  <h1>Бесплатная покупка подержанных лизинговых авто</h1>
+  <p>Сейчас на сайте&nbsp;<span>1056</span>&nbsp;автомобилей</p>
+</div>
+
+<div class="menu_autocatalog">
+<a class="main" href="#">ГЛАВНАЯ</a><div class="hh"></div>
+<a class="about" href="#">О ПРОЕКТЕ</a><div class="hh"></div>
+<a class="contacts" href="#">КОНТАКТЫ</a><div class="hh"></div>
+<a class="buy" href="#">УСЛОВИЯ ПОКУПКИ</a><div class="hh"></div>
+<input type="button" class="registration cursor" value="Регистрация &rarr;">
+</div>
+
+<div class="middle_autocatalog">
+  
+<div class="left">
+    <h2 class="car_marks2">МАРКИ АВТОМОБИЛЕЙ:</h2>
+        <a class="car_marks2" href="#"><span class="car_marks2">Alfa Romeo</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Audi</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">BMW</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Mercedes</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Citroen</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Alfa Romeo</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Audi</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">BMW</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Mercedes</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Citroen</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Alfa Romeo</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Audi</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">BMW</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Mercedes</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Citroen</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Alfa Romeo</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Audi</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">BMW</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Mercedes</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Citroen</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Alfa Romeo</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        
+        
+    <h2 class="car_marks3">АУКЦИОНЫ:</h2>
+        <div class="fix2"><a class="fix2" href="#">ALD&nbsp;<span>(17)</span></a></div>
+        <a class="car_marks2" href="#"><span class="car_marks2">ALD</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ARVAL</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Car Next</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ALD</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ARVAL</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Car Next</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ALD</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ARVAL</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Car Next</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ALD</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">ARVAL</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        <a class="car_marks2" href="#"><span class="car_marks2">Car Next</span>&nbsp;<span class="car_marks_number2">(17)</span></a>
+        
+</div>  
+
+<div class="center">
+  <h2 class="catalog">КАТАЛОГ АВТОМОБИЛЕЙ:</h2>
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/catalog_car.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+    <form class="stavka" method="get">
+      <input class="stavka" type="text">
+      <input class="betting cursor" type="submit" value="СДЕЛАТЬ СТАВКУ">
+    </form>
+    
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+        
+    <div class="clear"></div>
+  </div>
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/no_image.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+    <form class="stavka2" method="get">
+       <input class="stavka2 cursor" type="submit" value=" ">
+    </form>
+   
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+       
+    <div class="clear"></div>
+  </div>
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/catalog_car.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+    <form class="stavka3" method="get">
+      <div class="stavka3"><input class="stavka3" type="text" value="123546"><p class="euro">&euro;</p></div>
+      <input class="betting3 cursor" type="submit" value="УБРАТЬ СТАВКУ">
+    </form>
+    
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+    
+    
+    <div class="clear"></div>
+  </div> 
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/catalog_car.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+     <form class="stavka" method="get">
+      <input class="stavka" type="text">
+      <input class="betting cursor" type="submit" value="СДЕЛАТЬ СТАВКУ">
+    </form>
+   
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+   
+    
+    <div class="clear"></div>
+  </div>
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/catalog_car.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+     <form class="stavka" method="get">
+      <input class="stavka" type="text">
+      <input class="betting cursor" type="submit" value="СДЕЛАТЬ СТАВКУ">
+    </form>
+   
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+    
+    
+    <div class="clear"></div>
+  </div>
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/catalog_car.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+     <form class="stavka" method="get">
+      <input class="stavka" type="text">
+      <input class="betting cursor" type="submit" value="СДЕЛАТЬ СТАВКУ">
+    </form>
+    
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+   
+    
+    <div class="clear"></div>
+  </div>
+  
+  <div class="car">
+    <div class="image">
+      <img class="catalog_car" alt="car" src="img/catalog_car.jpg">
+      <a class="image" href="#">ПОДРОБНЕЕ</a>
+    </div>
+     <form class="stavka" method="get">
+      <input class="stavka" type="text">
+      <input class="betting cursor" type="submit" value="СДЕЛАТЬ СТАВКУ">
+    </form>
+   
+      <p class="catalog_car">BMW 530 DA EXCLUSIVE EDITION BMW 530 DA EXCLUSIVE EDITION</p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+      <p class="catalog_car">Kms -&nbsp;<span>201845</span></p>
+      <p class="catalog_car">1st registration -&nbsp;<span>2008-03-18</span></p>
+      <p class="catalog_car">vin -&nbsp;<span>WDFGDFH123123FDGHF2</span></p>
+   
+    
+    <div class="clear"></div>
+  </div> 
+  
+  <div class="page_number">
+    <a class="back" href="#">&larr;</a>
+    <a class="page_number_back" href="#">...</a>
+    <a class="page_number active" href="#">1</a>
+    <a class="page_number" href="#">2</a>
+    <a class="page_number" href="#">3</a>
+    <a class="page_number" href="#">4</a>
+    <a class="page_number" href="#">5</a>
+    <a class="page_number_forward" href="#">...</a>
+    <a class="forward" href="#">&rarr;</a>
+  </div>
+  
+</div>
+
+<div class="right">
+  <form class="authorization2" method="get">
+    <p class="authorization">Авторизация:</p>
+    <p class="login">ЛОГИН (E-MAIL):</p>
+    <input class="authorization" type="text">
+    <p class="password">ПАРОЛЬ:</p>
+    <input class="authorization" type="password">
+    <input class="enter cursor" type="submit" value="ВОЙТИ">
+    <input type="button" class="remember cursor" value="Напомнить пароль">
+    <input type="button" class="reg cursor" value="Регистрация">
+  </form>
+  
+  <form class="find" method="get">
+    <p class="find">Поиск авто:</p>
+    <p class="find_p">Марка авто</p>
+    <select class="marka">
+      <option value="m1">АУДИ</option>
+      <option value="m2">БМВ</option>
+      <option value="m3" selected>Мерседес-Бенц</option>
+      <option value="m4">Тойота</option>
+    </select>
+    <p class="find_p">Год выпуска от:</p>
+    <div class="year">
+    <select class="year1">
+      <option value="y1">2003</option>
+      <option value="y2">2004</option>
+      <option value="y3" selected>2005</option>
+      <option value="y4">2006</option>
+    </select>
+    <p>до</p>
+    <select class="year2">
+      <option value="e1">2007</option>
+      <option value="e2">2008</option>
+      <option value="e3" selected>2009</option>
+      <option value="e4">2010</option>
+    </select>
+    </div>
+    <p class="find_p">Пробег, до:</p>
+    <select class="km">
+      <option value="km1">150000</option>
+      <option value="km2">200000</option>
+      <option value="km3" selected>250000</option>
+      <option value="km4">300000</option>
+    </select>
+    <p class="find_p">Топливо:</p>
+    <select class="fuel">
+      <option value="fuel1" selected>Бензин</option>
+      <option value="fuel2">Газ</option>
+      <option value="fuel3">Дизтопливо</option>
+    </select>
+    
+    <input class="find cursor" type="submit" value="НАЙТИ">
+    
+  </form>
+  
+  <a class="supplies" href="#"><img class="supplies" alt="supplies" src="img/supplies.jpg"></a>
+  
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="foot_autocatalog">
+   <div class="footer_autocatalog">
+           <p class="copyright">&copy; Фрибек, все права сохранены 2012</p>
+           <p class="produce">Разработка сайта:&nbsp;<a href="#">Partgraphic</a></p>
+           <div class="faq">
+            <p>Частые вопросы:</p>
+             <a href="#">Как купить автомобиль на сайте?</a><br>
+             <a href="#">Как оплатить покупку?</a><br>
+             <a href="#">Варианты доставки?</a><br>
+             <a href="#">Стоимость ваших услуг?</a>
+           </div>
+   </div>
+</div>
+
+</div>
+
+
+<!--Форма регистрация-->
+
+<div class="bg"></div> <!--Здесь надо поставить стиль display: none-->
+<div class="registration_form"> <!--Здесь надо поставить стиль display: none-->
+<div class="registr_bg">
+  <div class="parent">
+    <div class="child">
+      <form method="get" class="registr">
+        <p class="h_registr">Регистрация на Freebec.eu</p>
+        <p class="registr">Email (будет также Вашим логином для входа)</p>
+        <input class="registr" type="text">
+        <p class="registr">Выберите пароль</p>
+        <input class="registr" type="text">
+        <p class="registr">Страна проживания</p>
+        <input class="registr" type="text">
+        <p class="registr">Номер телефона в международном формате</p>
+        <input class="registr" type="text">
+        <p class="registr">Скайп (Skype)</p>
+        <input class="registr" type="text">
+        <p class="registr">Скайп (Skype)</p>
+        <input class="registr" type="text">
+        <input type="submit" class="reg_submit cursor" value="Регистрация">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Конец формы регистрация-->
+
+
+</body>
+
+
+
+</html>
