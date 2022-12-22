@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd0186f7-7e6f-4226-99a6-63f21b8b0b3b" name="Changes" comment="" />
+    <list default="true" id="dd0186f7-7e6f-4226-99a6-63f21b8b0b3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/OSPanel/domains/freebec/.gitignore",
+    "last_opened_file_path": "E:/OSPanel/domains/mysite",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -54,7 +57,7 @@
       <workItem from="1671747218981" duration="1250000" />
       <workItem from="1671748507786" duration="1522000" />
       <workItem from="1671750061495" duration="705000" />
-      <workItem from="1671750788987" duration="913000" />
+      <workItem from="1671750788987" duration="1860000" />
     </task>
     <servers />
   </component>
