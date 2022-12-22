@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd0186f7-7e6f-4226-99a6-63f21b8b0b3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/freebec.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
-    </list>
+    <list default="true" id="dd0186f7-7e6f-4226-99a6-63f21b8b0b3b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +54,7 @@
       <workItem from="1671747218981" duration="1250000" />
       <workItem from="1671748507786" duration="1522000" />
       <workItem from="1671750061495" duration="705000" />
-      <workItem from="1671750788987" duration="505000" />
+      <workItem from="1671750788987" duration="913000" />
     </task>
     <servers />
   </component>
